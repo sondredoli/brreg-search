@@ -35,7 +35,6 @@ function App() {
         search
         placeholder="Skriv inn firmanavn"
       />
-      <button onClick={handleClick}>Reg</button>
     </div>
   );
 }
