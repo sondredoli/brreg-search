@@ -3,14 +3,9 @@ import SelectSearch from "react-select-search";
 import "./App.css";
 
 function App() {
-  function handleClick() {
-    let company = document.getElementById("company").value;
-    console.log(company);
-  }
   return (
-    <div className="App">
+    <div className="select-search-container">
       <SelectSearch
-        id="company"
         options={[]}
         defaultValue="15997"
         getOptions={(query) => {
@@ -33,9 +28,8 @@ function App() {
           });
         }}
         search
-        placeholder="Skriv inn firmanavn"
+        placeholder="Firma"
       />
-      <button onClick={handleClick}>Reg</button>
     </div>
   );
 }
